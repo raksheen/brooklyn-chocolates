@@ -1,0 +1,517 @@
+*{
+font-family: 'Fjalla One', sans-serif;
+;
+  }
+  #myContainer{
+    /*width: 100%;
+    height: 20px;*/
+    position: relative;
+    background-repeat: no-repeat;
+   /* margin:0;
+    padding:0;
+    border:0;*/
+  } 
+  #myAnimation{
+    width: 480px;
+    height: 50px;
+    position: absolute;
+    background-color:yellow;
+    left:400px;
+   /* margin:0;
+    padding:0;
+    border:0;*/
+}    
+header{
+    margin:0;
+   }
+   ul li{
+    display:inline;
+    list-style: none;
+   }
+   ul{
+    background:white;
+
+
+   }
+   li a{
+    display:inline-block;
+    color:black;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+   }
+
+   li a:hover, .dropdown:hover{
+    background-color:gray;
+   }
+   .img_logo {
+    height:100px;
+    padding:0;
+    margin:0;
+    background-color:white;
+    border-left:0;
+   }
+   .nav_bar{
+    animation-name: movement;
+    animation-duration: 2s;
+    animation-direction: left;
+    z-index: 99999;
+    margin-left:0;
+    padding-left: 0;
+    border-left:0;
+
+   }
+   @keyframes movement {
+      0% {margin-left:0px;}
+      /*25% {margin-left:25px;}
+      50% {margin-left:45px;}
+      75% {margin-left:75px;}*/
+      50% {margin-left:60px;}
+      100% {margin-left:0px;}
+   }
+   .dropdown{
+    display:inline-block;
+    z-index: 99999;
+
+   }
+   .content{
+    display:none;
+    position:absolute;
+    background-color:white;
+    min-width:160px;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.2);
+    z-index: 99999;
+
+   }
+   .content a{
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align:left;
+    min-width: 160px;
+    box-shadow: 0 8px 0 rgba(0,0,0,0.2);
+    z-index: 99999;
+
+   }
+   .content a:hover{
+/*    background-color:gray;
+*/    z-index: 99999;
+
+   }
+   .dropdown:hover .content{
+    display:block;
+    z-index: 99999;
+
+   }
+/*end: Nav bar*/
+/*start:timer*/
+#timer{
+  font-size:45px;
+  text-align:center;
+  background-color:yellow;
+  margin:0;
+  padding:0;
+  border:0;
+  height:100px;
+  width:100%;
+  animation:pulse 3s infinite;
+  /*background:url("../images/trends/background.jpeg");*/
+}
+
+@keyframes pulse {
+  0%{
+    background-color:white;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+/*end:timer*/
+
+/*Slideshow*/
+/** {box-sizing:border-box}
+*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  max-height:600px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+  height:30px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+/*  background-color: rgba(0,0,0,0.8);
+*/}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+/*  padding: 8px 12px;
+*/position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  top:20px;
+  margin-right: 80px;
+} 
+
+
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+/*  background-color: #bbb;
+*/  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  font-weight: bold;
+}
+
+.active, .dot:hover {
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*end:slideshow*/
+
+
+  
+.blurb { 
+   position: relative; 
+   width: 100%; 
+}
+
+.blurb_text { 
+  position: absolute; 
+  top: 500px;
+  width: 80%; 
+  text-align: center;
+  padding:100px;
+}
+.img_blurb {
+    width:100%;
+    border-top:1000px;
+    padding-top:500px;
+/*    padding-bottom:50px;
+*/}
+
+/*Christmas */
+.christmas {
+  border:solid black 1px;
+  display:table;
+  padding:5px; 
+  width:100%;
+  margin:5px 0; 
+}
+.text_christmas {
+  vertical-align:middle;
+  display:table-cell;
+  text-align:justify;
+}
+.christmas .img_christmas {
+  vertical-align:middle;
+    display:table-cell;
+    padding-right:5px;
+    width:100px;
+}
+.img_christmas{
+   width:100%;
+    height:50px; /* you can change height */
+    vertical-align:middle;
+}
+/*end:christmas*/
+/*main image on top of brand page*/
+.img_mainbrand {
+  width:1200px;
+  display: block;
+  margin:0 auto;
+  border-radius:10px;
+}
+/*end:main image on top of brand page*/
+/*product page*/
+.product-filter {
+  display: flex;
+  padding-top: 0;
+  padding-bottom:20px;
+}
+
+.sort {
+  display: flex;
+  align-self: flex-end;
+}
+
+.collection-sort {
+ display: flex;
+  flex-direction: column;
+}
+
+.collection-sort:first-child {
+  padding-right: 20px;
+}
+
+label {
+  color: #666;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  
+  padding: 2%;
+  flex: 1 20%;
+  
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+}
+
+.product-image img {
+  width: 100%;
+}
+.product-image:hover{
+  transform: scale(1.07);
+  transition: 1s;
+}
+
+
+.product-info {
+  margin-top: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+/*source:https://codepen.io/levinmejia/pen/zrddrv*/
+/*end:product page*/
+   .featured_brands {
+    text-align:center;
+    margin:25px;
+    border:20px;
+   }
+   .fea_logo {
+    width:30%;
+    padding:15px;
+
+   }
+   /*Get Inspired IG Section*/
+   .get_inspired {
+    justify-content: center;
+    padding:150px;
+    text-align: center;
+   }
+   .ig {
+    width:300px;
+    height:300px;
+    grid-row: 4;
+    opacity:1;
+    padding:8px;
+   }
+
+   .ig:hover{
+  transform: scale(1.07);
+  opacity:.5;
+  transition: 1s;
+   /*end:get inspired*/
+ }
+
+ 
+
+.table_info {
+    width:360px;
+    height:280px;
+    text-align: center;
+    padding:10px;
+}
+
+.para {
+    background:url("../images/trends/background.jpeg");
+    background-width:100%;
+    /*image source: https://static1.squarespace.com/static/535167fae4b0b045e6866915/t/54dbe54de4b093564ac1b2e1/1423697248744/;*/
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: 'Fjalla One', sans-serif;
+
+    }    
+    .parainner{
+        background: rgba(66,66,66,0.4);
+        width:800px;
+        margin-left:40%;
+        color:white;
+        font-family: 'Fjalla One', sans-serif;
+
+    }
+.trends_text{
+  text-align: center;
+}    
+.img_emo .img_darren{
+  display:block;
+  align-items: center;
+  margin-left: auto;
+  opacity:1.8;
+  margin-right: auto;
+  justify-content: center;  
+  height:800px;
+}
+.para_about {
+    background:url("../images/about/about.jpg") fixed;
+    background-width:100%;
+    /*image source: https://static1.squarespace.com/static/535167fae4b0b045e6866915/t/54dbe54de4b093564ac1b2e1/1423697248744/;*/
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: 'Fjalla One', sans-serif;
+    }    
+    .parainner_about{
+/*        background: rgba(66,66,66,0.8);
+*/      width:800px;
+        margin-left:40%;
+        color:white;
+        overflow: scroll;
+        font-family: 'Fjalla One', sans-serif;
+    }
+    
+/*END: 2nd PARALAX on ABOUT PAGE*/
+/*MODAL: START*/
+.container {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position:relative;
+}
+.interior {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btn {
+  background-color: yellow;
+  padding: 1em 3em;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(66, 66, 66, 0.6);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-window>div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 2rem;
+  background: white;
+  color: black;
+}
+
+.modal-window header {
+  font-weight: bold;
+}
+
+.modal-close {
+  color: black;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+.modal-window h1 {
+  font-size: 50px;
+  margin: 0 0 15px;
+}
+.form {
+  position:relative;
+  text-align: center;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+.placeholder {
+  width:1000px;
+}
+.contact_text{
+}
+.img_contact{
+  width:100%;
+  position: absolute; 
+  text-align: center;
+  padding:0px;
+  justify-content: center;
+}
+.about_title {
+  text-align: center;
+}
